@@ -1,0 +1,6 @@
+
+# Week 2 Learning Record 
+This week, I completed two core tasks: first, I replaced the original Cent OS 7 system with Rocky Linux in the virtual machine, and reorganized the working directory to streamline subsequent operations and learning processes. Second, I installed and configured HPL-2.3 and its associated tools in the new system. The first trial run of HPL failed, and after troubleshooting, I found that the default `HPL.dat` configuration requires at least 4 processes to run, which is incompatible with my single-process test requirement. I then modified the parameters in `HPL.dat` to adapt it to the single-process operation mode, and finally successfully completed the trial run of HPL.
+
+The part I was most unfamiliar with in practice is the parameter design logic of the `HPL.dat` configuration file, and I have a shallow understanding of the correlation rules between the number of processes and configuration items. The core problem I encountered was the conflict between the default configuration and the single-process operation requirement, which was resolved by adjusting the configuration file. At present, I still wonder how to reasonably set the parameters of `HPL.dat` in the multi-process mode and the specific impact mechanism of different parameters on the HPL test results.
+
